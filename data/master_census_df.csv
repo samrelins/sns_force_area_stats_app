@@ -1,0 +1,799 @@
+police_force_code,police_force_name,ethnicity_simple,ethnicity_full,census_pop
+E23000001,Metropolitan Police,Asian,Asian Other,400903
+E23000001,Metropolitan Police,Asian,Bangladeshi,321806
+E23000001,Metropolitan Police,Asian,Chinese,147062
+E23000001,Metropolitan Police,Asian,Indian,655919
+E23000001,Metropolitan Police,Asian,Pakistani,290489
+E23000001,Metropolitan Police,Black,Black African,696938
+E23000001,Metropolitan Police,Black,Black Caribbean,345329
+E23000001,Metropolitan Police,Black,Black Other,145845
+E23000001,Metropolitan Police,Mixed,Mixed Other,170530
+E23000001,Metropolitan Police,Mixed,Mixed White and Asian,124888
+E23000001,Metropolitan Police,Mixed,Mixed White and Black African,77365
+E23000001,Metropolitan Police,Mixed,Mixed White and Black Caribbean,132425
+E23000001,Metropolitan Police,Other,Any Other Ethnic Background,416584
+E23000001,Metropolitan Police,Other,Arab,139618
+E23000001,Metropolitan Police,White,Gypsy or Irish Traveller,7003
+E23000001,Metropolitan Police,White,Roma,37685
+E23000001,Metropolitan Police,White,White British,3235646
+E23000001,Metropolitan Police,White,White Irish,156179
+E23000001,Metropolitan Police,White,White Other,1288754
+E23000002,Cumbria,Asian,Asian Other,1781
+E23000002,Cumbria,Asian,Bangladeshi,438
+E23000002,Cumbria,Asian,Chinese,1130
+E23000002,Cumbria,Asian,Indian,1202
+E23000002,Cumbria,Asian,Pakistani,360
+E23000002,Cumbria,Black,Black African,872
+E23000002,Cumbria,Black,Black Caribbean,236
+E23000002,Cumbria,Black,Black Other,88
+E23000002,Cumbria,Mixed,Mixed Other,1135
+E23000002,Cumbria,Mixed,Mixed White and Asian,1488
+E23000002,Cumbria,Mixed,Mixed White and Black African,582
+E23000002,Cumbria,Mixed,Mixed White and Black Caribbean,790
+E23000002,Cumbria,Other,Any Other Ethnic Background,1252
+E23000002,Cumbria,Other,Arab,460
+E23000002,Cumbria,White,Gypsy or Irish Traveller,366
+E23000002,Cumbria,White,Roma,241
+E23000002,Cumbria,White,White British,474162
+E23000002,Cumbria,White,White Irish,1677
+E23000002,Cumbria,White,White Other,11581
+E23000003,Lancashire,Asian,Asian Other,8916
+E23000003,Lancashire,Asian,Bangladeshi,8463
+E23000003,Lancashire,Asian,Chinese,5521
+E23000003,Lancashire,Asian,Indian,50498
+E23000003,Lancashire,Asian,Pakistani,85469
+E23000003,Lancashire,Black,Black African,6724
+E23000003,Lancashire,Black,Black Caribbean,2263
+E23000003,Lancashire,Black,Black Other,1106
+E23000003,Lancashire,Mixed,Mixed Other,5360
+E23000003,Lancashire,Mixed,Mixed White and Asian,9576
+E23000003,Lancashire,Mixed,Mixed White and Black African,3300
+E23000003,Lancashire,Mixed,Mixed White and Black Caribbean,6548
+E23000003,Lancashire,Other,Any Other Ethnic Background,7797
+E23000003,Lancashire,Other,Arab,4062
+E23000003,Lancashire,White,Gypsy or Irish Traveller,1310
+E23000003,Lancashire,White,Roma,1253
+E23000003,Lancashire,White,White British,1267751
+E23000003,Lancashire,White,White Irish,8071
+E23000003,Lancashire,White,White Other,47171
+E23000004,Merseyside,Asian,Asian Other,11979
+E23000004,Merseyside,Asian,Bangladeshi,3874
+E23000004,Merseyside,Asian,Chinese,13179
+E23000004,Merseyside,Asian,Indian,10713
+E23000004,Merseyside,Asian,Pakistani,4709
+E23000004,Merseyside,Black,Black African,16113
+E23000004,Merseyside,Black,Black Caribbean,2368
+E23000004,Merseyside,Black,Black Other,3453
+E23000004,Merseyside,Mixed,Mixed Other,8537
+E23000004,Merseyside,Mixed,Mixed White and Asian,7671
+E23000004,Merseyside,Mixed,Mixed White and Black African,6993
+E23000004,Merseyside,Mixed,Mixed White and Black Caribbean,7271
+E23000004,Merseyside,Other,Any Other Ethnic Background,11549
+E23000004,Merseyside,Other,Arab,10088
+E23000004,Merseyside,White,Gypsy or Irish Traveller,769
+E23000004,Merseyside,White,Roma,1712
+E23000004,Merseyside,White,White British,1242308
+E23000004,Merseyside,White,White Irish,13479
+E23000004,Merseyside,White,White Other,46475
+E23000005,Greater Manchester,Asian,Asian Other,34768
+E23000005,Greater Manchester,Asian,Bangladeshi,46390
+E23000005,Greater Manchester,Asian,Chinese,29604
+E23000005,Greater Manchester,Asian,Indian,69462
+E23000005,Greater Manchester,Asian,Pakistani,209053
+E23000005,Greater Manchester,Black,Black African,98547
+E23000005,Greater Manchester,Black,Black Caribbean,19709
+E23000005,Greater Manchester,Black,Black Other,15856
+E23000005,Greater Manchester,Mixed,Mixed Other,19220
+E23000005,Greater Manchester,Mixed,Mixed White and Asian,23014
+E23000005,Greater Manchester,Mixed,Mixed White and Black African,16349
+E23000005,Greater Manchester,Mixed,Mixed White and Black Caribbean,27926
+E23000005,Greater Manchester,Other,Any Other Ethnic Background,39691
+E23000005,Greater Manchester,Other,Arab,27313
+E23000005,Greater Manchester,White,Gypsy or Irish Traveller,2404
+E23000005,Greater Manchester,White,Roma,3276
+E23000005,Greater Manchester,White,White British,2045881
+E23000005,Greater Manchester,White,White Irish,30802
+E23000005,Greater Manchester,White,White Other,108265
+E23000006,Cheshire,Asian,Asian Other,6386
+E23000006,Cheshire,Asian,Bangladeshi,1603
+E23000006,Cheshire,Asian,Chinese,4621
+E23000006,Cheshire,Asian,Indian,8527
+E23000006,Cheshire,Asian,Pakistani,4000
+E23000006,Cheshire,Black,Black African,4353
+E23000006,Cheshire,Black,Black Caribbean,1329
+E23000006,Cheshire,Black,Black Other,921
+E23000006,Cheshire,Mixed,Mixed Other,4200
+E23000006,Cheshire,Mixed,Mixed White and Asian,6101
+E23000006,Cheshire,Mixed,Mixed White and Black African,2715
+E23000006,Cheshire,Mixed,Mixed White and Black Caribbean,4432
+E23000006,Cheshire,Other,Any Other Ethnic Background,5999
+E23000006,Cheshire,Other,Arab,1919
+E23000006,Cheshire,White,Gypsy or Irish Traveller,908
+E23000006,Cheshire,White,Roma,864
+E23000006,Cheshire,White,White British,989199
+E23000006,Cheshire,White,White Irish,7262
+E23000006,Cheshire,White,White Other,39910
+E23000007,Northumbria,Asian,Asian Other,11175
+E23000007,Northumbria,Asian,Bangladeshi,14018
+E23000007,Northumbria,Asian,Chinese,9532
+E23000007,Northumbria,Asian,Indian,13646
+E23000007,Northumbria,Asian,Pakistani,11908
+E23000007,Northumbria,Black,Black African,14752
+E23000007,Northumbria,Black,Black Caribbean,886
+E23000007,Northumbria,Black,Black Other,1831
+E23000007,Northumbria,Mixed,Mixed Other,5261
+E23000007,Northumbria,Mixed,Mixed White and Asian,7076
+E23000007,Northumbria,Mixed,Mixed White and Black African,3976
+E23000007,Northumbria,Mixed,Mixed White and Black Caribbean,2973
+E23000007,Northumbria,Other,Any Other Ethnic Background,10492
+E23000007,Northumbria,Other,Arab,6628
+E23000007,Northumbria,White,Gypsy or Irish Traveller,951
+E23000007,Northumbria,White,Roma,1633
+E23000007,Northumbria,White,White British,1294081
+E23000007,Northumbria,White,White Irish,5196
+E23000007,Northumbria,White,White Other,31674
+E23000008,Durham,Asian,Asian Other,2444
+E23000008,Durham,Asian,Bangladeshi,1058
+E23000008,Durham,Asian,Chinese,3147
+E23000008,Durham,Asian,Indian,3243
+E23000008,Durham,Asian,Pakistani,922
+E23000008,Durham,Black,Black African,1656
+E23000008,Durham,Black,Black Caribbean,420
+E23000008,Durham,Black,Black Other,365
+E23000008,Durham,Mixed,Mixed Other,1529
+E23000008,Durham,Mixed,Mixed White and Asian,2464
+E23000008,Durham,Mixed,Mixed White and Black African,1114
+E23000008,Durham,Mixed,Mixed White and Black Caribbean,1293
+E23000008,Durham,Other,Any Other Ethnic Background,1856
+E23000008,Durham,Other,Arab,1144
+E23000008,Durham,White,Gypsy or Irish Traveller,1228
+E23000008,Durham,White,Roma,263
+E23000008,Durham,White,White British,591947
+E23000008,Durham,White,White Irish,1715
+E23000008,Durham,White,White Other,12021
+E23000009,North Yorkshire,Asian,Asian Other,5293
+E23000009,North Yorkshire,Asian,Bangladeshi,742
+E23000009,North Yorkshire,Asian,Chinese,4479
+E23000009,North Yorkshire,Asian,Indian,3893
+E23000009,North Yorkshire,Asian,Pakistani,1587
+E23000009,North Yorkshire,Black,Black African,2489
+E23000009,North Yorkshire,Black,Black Caribbean,739
+E23000009,North Yorkshire,Black,Black Other,558
+E23000009,North Yorkshire,Mixed,Mixed Other,2840
+E23000009,North Yorkshire,Mixed,Mixed White and Asian,4072
+E23000009,North Yorkshire,Mixed,Mixed White and Black African,1462
+E23000009,North Yorkshire,Mixed,Mixed White and Black Caribbean,2074
+E23000009,North Yorkshire,Other,Any Other Ethnic Background,3611
+E23000009,North Yorkshire,Other,Arab,1193
+E23000009,North Yorkshire,White,Gypsy or Irish Traveller,919
+E23000009,North Yorkshire,White,Roma,577
+E23000009,North Yorkshire,White,White British,751024
+E23000009,North Yorkshire,White,White Irish,3998
+E23000009,North Yorkshire,White,White Other,26835
+E23000010,West Yorkshire,Asian,Asian Other,27238
+E23000010,West Yorkshire,Asian,Bangladeshi,20067
+E23000010,West Yorkshire,Asian,Chinese,12524
+E23000010,West Yorkshire,Asian,Indian,62417
+E23000010,West Yorkshire,Asian,Pakistani,250555
+E23000010,West Yorkshire,Black,Black African,47872
+E23000010,West Yorkshire,Black,Black Caribbean,15612
+E23000010,West Yorkshire,Black,Black Other,8827
+E23000010,West Yorkshire,Mixed,Mixed Other,12608
+E23000010,West Yorkshire,Mixed,Mixed White and Asian,21019
+E23000010,West Yorkshire,Mixed,Mixed White and Black African,7730
+E23000010,West Yorkshire,Mixed,Mixed White and Black Caribbean,23571
+E23000010,West Yorkshire,Other,Any Other Ethnic Background,28788
+E23000010,West Yorkshire,Other,Arab,11524
+E23000010,West Yorkshire,White,Gypsy or Irish Traveller,2306
+E23000010,West Yorkshire,White,Roma,3979
+E23000010,West Yorkshire,White,White British,1693831
+E23000010,West Yorkshire,White,White Irish,13922
+E23000010,West Yorkshire,White,White Other,87322
+E23000011,South Yorkshire,Asian,Asian Other,12714
+E23000011,South Yorkshire,Asian,Bangladeshi,4597
+E23000011,South Yorkshire,Asian,Chinese,9706
+E23000011,South Yorkshire,Asian,Indian,10909
+E23000011,South Yorkshire,Asian,Pakistani,41187
+E23000011,South Yorkshire,Black,Black African,24327
+E23000011,South Yorkshire,Black,Black Caribbean,5842
+E23000011,South Yorkshire,Black,Black Other,3817
+E23000011,South Yorkshire,Mixed,Mixed Other,6744
+E23000011,South Yorkshire,Mixed,Mixed White and Asian,8321
+E23000011,South Yorkshire,Mixed,Mixed White and Black African,4136
+E23000011,South Yorkshire,Mixed,Mixed White and Black Caribbean,11267
+E23000011,South Yorkshire,Other,Any Other Ethnic Background,15035
+E23000011,South Yorkshire,Other,Arab,10346
+E23000011,South Yorkshire,White,Gypsy or Irish Traveller,1655
+E23000011,South Yorkshire,White,Roma,4152
+E23000011,South Yorkshire,White,White British,1142687
+E23000011,South Yorkshire,White,White Irish,4939
+E23000011,South Yorkshire,White,White Other,52662
+E23000012,Humberside,Asian,Asian Other,5488
+E23000012,Humberside,Asian,Bangladeshi,3557
+E23000012,Humberside,Asian,Chinese,2893
+E23000012,Humberside,Asian,Indian,4129
+E23000012,Humberside,Asian,Pakistani,3179
+E23000012,Humberside,Black,Black African,6209
+E23000012,Humberside,Black,Black Caribbean,581
+E23000012,Humberside,Black,Black Other,839
+E23000012,Humberside,Mixed,Mixed Other,3022
+E23000012,Humberside,Mixed,Mixed White and Asian,3473
+E23000012,Humberside,Mixed,Mixed White and Black African,2289
+E23000012,Humberside,Mixed,Mixed White and Black Caribbean,2377
+E23000012,Humberside,Other,Any Other Ethnic Background,6195
+E23000012,Humberside,Other,Arab,2422
+E23000012,Humberside,White,Gypsy or Irish Traveller,1029
+E23000012,Humberside,White,Roma,775
+E23000012,Humberside,White,White British,843706
+E23000012,Humberside,White,White Irish,2399
+E23000012,Humberside,White,White Other,41357
+E23000013,Cleveland,Asian,Asian Other,4273
+E23000013,Cleveland,Asian,Bangladeshi,1274
+E23000013,Cleveland,Asian,Chinese,1781
+E23000013,Cleveland,Asian,Indian,5103
+E23000013,Cleveland,Asian,Pakistani,14452
+E23000013,Cleveland,Black,Black African,5654
+E23000013,Cleveland,Black,Black Caribbean,391
+E23000013,Cleveland,Black,Black Other,662
+E23000013,Cleveland,Mixed,Mixed Other,1822
+E23000013,Cleveland,Mixed,Mixed White and Asian,2935
+E23000013,Cleveland,Mixed,Mixed White and Black African,1461
+E23000013,Cleveland,Mixed,Mixed White and Black Caribbean,1404
+E23000013,Cleveland,Other,Any Other Ethnic Background,3618
+E23000013,Cleveland,Other,Arab,2594
+E23000013,Cleveland,White,Gypsy or Irish Traveller,422
+E23000013,Cleveland,White,Roma,501
+E23000013,Cleveland,White,White British,511497
+E23000013,Cleveland,White,White Irish,1486
+E23000013,Cleveland,White,White Other,8026
+E23000014,West Midlands,Asian,Asian Other,66691
+E23000014,West Midlands,Asian,Bangladeshi,72215
+E23000014,West Midlands,Asian,Chinese,22703
+E23000014,West Midlands,Asian,Indian,226931
+E23000014,West Midlands,Asian,Pakistani,278811
+E23000014,West Midlands,Black,Black African,126073
+E23000014,West Midlands,Black,Black Caribbean,81756
+E23000014,West Midlands,Black,Black Other,28328
+E23000014,West Midlands,Mixed,Mixed Other,23161
+E23000014,West Midlands,Mixed,Mixed White and Asian,28912
+E23000014,West Midlands,Mixed,Mixed White and Black African,9774
+E23000014,West Midlands,Mixed,Mixed White and Black Caribbean,59868
+E23000014,West Midlands,Other,Any Other Ethnic Background,73283
+E23000014,West Midlands,Other,Arab,28083
+E23000014,West Midlands,White,Gypsy or Irish Traveller,2433
+E23000014,West Midlands,White,Roma,4234
+E23000014,West Midlands,White,White British,1630827
+E23000014,West Midlands,White,White Irish,31509
+E23000014,West Midlands,White,White Other,124232
+E23000015,Staffordshire,Asian,Asian Other,9470
+E23000015,Staffordshire,Asian,Bangladeshi,2526
+E23000015,Staffordshire,Asian,Chinese,3616
+E23000015,Staffordshire,Asian,Indian,12218
+E23000015,Staffordshire,Asian,Pakistani,26664
+E23000015,Staffordshire,Black,Black African,8335
+E23000015,Staffordshire,Black,Black Caribbean,3553
+E23000015,Staffordshire,Black,Black Other,1892
+E23000015,Staffordshire,Mixed,Mixed Other,3815
+E23000015,Staffordshire,Mixed,Mixed White and Asian,6269
+E23000015,Staffordshire,Mixed,Mixed White and Black African,2352
+E23000015,Staffordshire,Mixed,Mixed White and Black Caribbean,8758
+E23000015,Staffordshire,Other,Any Other Ethnic Background,7602
+E23000015,Staffordshire,Other,Arab,1498
+E23000015,Staffordshire,White,Gypsy or Irish Traveller,905
+E23000015,Staffordshire,White,Roma,978
+E23000015,Staffordshire,White,White British,992901
+E23000015,Staffordshire,White,White Irish,4336
+E23000015,Staffordshire,White,White Other,36813
+E23000016,West Mercia,Asian,Asian Other,5957
+E23000016,West Mercia,Asian,Bangladeshi,2218
+E23000016,West Mercia,Asian,Chinese,3864
+E23000016,West Mercia,Asian,Indian,12603
+E23000016,West Mercia,Asian,Pakistani,10483
+E23000016,West Mercia,Black,Black African,6835
+E23000016,West Mercia,Black,Black Caribbean,2806
+E23000016,West Mercia,Black,Black Other,1544
+E23000016,West Mercia,Mixed,Mixed Other,4635
+E23000016,West Mercia,Mixed,Mixed White and Asian,6745
+E23000016,West Mercia,Mixed,Mixed White and Black African,2464
+E23000016,West Mercia,Mixed,Mixed White and Black Caribbean,8014
+E23000016,West Mercia,Other,Any Other Ethnic Background,6087
+E23000016,West Mercia,Other,Arab,1406
+E23000016,West Mercia,White,Gypsy or Irish Traveller,2512
+E23000016,West Mercia,White,Roma,910
+E23000016,West Mercia,White,White British,1161796
+E23000016,West Mercia,White,White Irish,6532
+E23000016,West Mercia,White,White Other,52580
+E23000017,Warwickshire,Asian,Asian Other,6179
+E23000017,Warwickshire,Asian,Bangladeshi,596
+E23000017,Warwickshire,Asian,Chinese,3118
+E23000017,Warwickshire,Asian,Indian,24301
+E23000017,Warwickshire,Asian,Pakistani,3152
+E23000017,Warwickshire,Black,Black African,4889
+E23000017,Warwickshire,Black,Black Caribbean,2113
+E23000017,Warwickshire,Black,Black Other,1034
+E23000017,Warwickshire,Mixed,Mixed Other,2883
+E23000017,Warwickshire,Mixed,Mixed White and Asian,4599
+E23000017,Warwickshire,Mixed,Mixed White and Black African,1467
+E23000017,Warwickshire,Mixed,Mixed White and Black Caribbean,4524
+E23000017,Warwickshire,Other,Any Other Ethnic Background,5443
+E23000017,Warwickshire,Other,Arab,785
+E23000017,Warwickshire,White,Gypsy or Irish Traveller,387
+E23000017,Warwickshire,White,Roma,643
+E23000017,Warwickshire,White,White British,490075
+E23000017,Warwickshire,White,White Irish,5554
+E23000017,Warwickshire,White,White Other,35031
+E23000018,Derbyshire,Asian,Asian Other,7366
+E23000018,Derbyshire,Asian,Bangladeshi,1062
+E23000018,Derbyshire,Asian,Chinese,3357
+E23000018,Derbyshire,Asian,Indian,18284
+E23000018,Derbyshire,Asian,Pakistani,22499
+E23000018,Derbyshire,Black,Black African,8143
+E23000018,Derbyshire,Black,Black Caribbean,4539
+E23000018,Derbyshire,Black,Black Other,1902
+E23000018,Derbyshire,Mixed,Mixed Other,4273
+E23000018,Derbyshire,Mixed,Mixed White and Asian,5629
+E23000018,Derbyshire,Mixed,Mixed White and Black African,2158
+E23000018,Derbyshire,Mixed,Mixed White and Black Caribbean,8401
+E23000018,Derbyshire,Other,Any Other Ethnic Background,8835
+E23000018,Derbyshire,Other,Arab,1430
+E23000018,Derbyshire,White,Gypsy or Irish Traveller,812
+E23000018,Derbyshire,White,Roma,1400
+E23000018,Derbyshire,White,White British,917478
+E23000018,Derbyshire,White,White Irish,5326
+E23000018,Derbyshire,White,White Other,33169
+E23000019,Nottinghamshire,Asian,Asian Other,12954
+E23000019,Nottinghamshire,Asian,Bangladeshi,3095
+E23000019,Nottinghamshire,Asian,Chinese,8148
+E23000019,Nottinghamshire,Asian,Indian,21847
+E23000019,Nottinghamshire,Asian,Pakistani,26693
+E23000019,Nottinghamshire,Black,Black African,23997
+E23000019,Nottinghamshire,Black,Black Caribbean,12621
+E23000019,Nottinghamshire,Black,Black Other,5552
+E23000019,Nottinghamshire,Mixed,Mixed Other,6938
+E23000019,Nottinghamshire,Mixed,Mixed White and Asian,7973
+E23000019,Nottinghamshire,Mixed,Mixed White and Black African,3933
+E23000019,Nottinghamshire,Mixed,Mixed White and Black Caribbean,17320
+E23000019,Nottinghamshire,Other,Any Other Ethnic Background,11524
+E23000019,Nottinghamshire,Other,Arab,5226
+E23000019,Nottinghamshire,White,Gypsy or Irish Traveller,1008
+E23000019,Nottinghamshire,White,Roma,1697
+E23000019,Nottinghamshire,White,White British,914850
+E23000019,Nottinghamshire,White,White Irish,6351
+E23000019,Nottinghamshire,White,White Other,56688
+E23000020,Lincolnshire,Asian,Asian Other,3655
+E23000020,Lincolnshire,Asian,Bangladeshi,733
+E23000020,Lincolnshire,Asian,Chinese,2350
+E23000020,Lincolnshire,Asian,Indian,3922
+E23000020,Lincolnshire,Asian,Pakistani,1244
+E23000020,Lincolnshire,Black,Black African,2892
+E23000020,Lincolnshire,Black,Black Caribbean,953
+E23000020,Lincolnshire,Black,Black Other,511
+E23000020,Lincolnshire,Mixed,Mixed Other,2589
+E23000020,Lincolnshire,Mixed,Mixed White and Asian,3138
+E23000020,Lincolnshire,Mixed,Mixed White and Black African,1634
+E23000020,Lincolnshire,Mixed,Mixed White and Black Caribbean,2836
+E23000020,Lincolnshire,Other,Any Other Ethnic Background,3532
+E23000020,Lincolnshire,Other,Arab,814
+E23000020,Lincolnshire,White,Gypsy or Irish Traveller,967
+E23000020,Lincolnshire,White,Roma,691
+E23000020,Lincolnshire,White,White British,685714
+E23000020,Lincolnshire,White,White Irish,3114
+E23000020,Lincolnshire,White,White Other,47018
+E23000021,Leicestershire,Asian,Asian Other,16668
+E23000021,Leicestershire,Asian,Bangladeshi,10319
+E23000021,Leicestershire,Asian,Chinese,6178
+E23000021,Leicestershire,Asian,Indian,168801
+E23000021,Leicestershire,Asian,Pakistani,16666
+E23000021,Leicestershire,Black,Black African,26939
+E23000021,Leicestershire,Black,Black Caribbean,6622
+E23000021,Leicestershire,Black,Black Other,3648
+E23000021,Leicestershire,Mixed,Mixed Other,6993
+E23000021,Leicestershire,Mixed,Mixed White and Asian,9457
+E23000021,Leicestershire,Mixed,Mixed White and Black African,3491
+E23000021,Leicestershire,Mixed,Mixed White and Black Caribbean,10155
+E23000021,Leicestershire,Other,Any Other Ethnic Background,18067
+E23000021,Leicestershire,Other,Arab,4882
+E23000021,Leicestershire,White,Gypsy or Irish Traveller,1110
+E23000021,Leicestershire,White,Roma,1244
+E23000021,Leicestershire,White,White British,755552
+E23000021,Leicestershire,White,White Irish,5849
+E23000021,Leicestershire,White,White Other,49222
+E23000022,Northamptonshire,Asian,Asian Other,5608
+E23000022,Northamptonshire,Asian,Bangladeshi,5764
+E23000022,Northamptonshire,Asian,Chinese,2929
+E23000022,Northamptonshire,Asian,Indian,16975
+E23000022,Northamptonshire,Asian,Pakistani,3933
+E23000022,Northamptonshire,Black,Black African,21186
+E23000022,Northamptonshire,Black,Black Caribbean,6125
+E23000022,Northamptonshire,Black,Black Other,4363
+E23000022,Northamptonshire,Mixed,Mixed Other,4884
+E23000022,Northamptonshire,Mixed,Mixed White and Asian,4641
+E23000022,Northamptonshire,Mixed,Mixed White and Black African,3122
+E23000022,Northamptonshire,Mixed,Mixed White and Black Caribbean,7666
+E23000022,Northamptonshire,Other,Any Other Ethnic Background,6641
+E23000022,Northamptonshire,Other,Arab,1018
+E23000022,Northamptonshire,White,Gypsy or Irish Traveller,710
+E23000022,Northamptonshire,White,Roma,2125
+E23000022,Northamptonshire,White,White British,608786
+E23000022,Northamptonshire,White,White Irish,6465
+E23000022,Northamptonshire,White,White Other,72315
+E23000023,Cambridgeshire,Asian,Asian Other,14750
+E23000023,Cambridgeshire,Asian,Bangladeshi,4329
+E23000023,Cambridgeshire,Asian,Chinese,10601
+E23000023,Cambridgeshire,Asian,Indian,20010
+E23000023,Cambridgeshire,Asian,Pakistani,20819
+E23000023,Cambridgeshire,Black,Black African,12850
+E23000023,Cambridgeshire,Black,Black Caribbean,3217
+E23000023,Cambridgeshire,Black,Black Other,2427
+E23000023,Cambridgeshire,Mixed,Mixed Other,7816
+E23000023,Cambridgeshire,Mixed,Mixed White and Asian,9066
+E23000023,Cambridgeshire,Mixed,Mixed White and Black African,4410
+E23000023,Cambridgeshire,Mixed,Mixed White and Black Caribbean,5681
+E23000023,Cambridgeshire,Other,Any Other Ethnic Background,12070
+E23000023,Cambridgeshire,Other,Arab,2747
+E23000023,Cambridgeshire,White,Gypsy or Irish Traveller,2266
+E23000023,Cambridgeshire,White,Roma,2410
+E23000023,Cambridgeshire,White,White British,652529
+E23000023,Cambridgeshire,White,White Irish,6863
+E23000023,Cambridgeshire,White,White Other,99674
+E23000024,Norfolk,Asian,Asian Other,6158
+E23000024,Norfolk,Asian,Bangladeshi,1457
+E23000024,Norfolk,Asian,Chinese,3652
+E23000024,Norfolk,Asian,Indian,6567
+E23000024,Norfolk,Asian,Pakistani,1136
+E23000024,Norfolk,Black,Black African,5989
+E23000024,Norfolk,Black,Black Caribbean,1193
+E23000024,Norfolk,Black,Black Other,1183
+E23000024,Norfolk,Mixed,Mixed Other,4278
+E23000024,Norfolk,Mixed,Mixed White and Asian,4402
+E23000024,Norfolk,Mixed,Mixed White and Black African,3210
+E23000024,Norfolk,Mixed,Mixed White and Black Caribbean,3213
+E23000024,Norfolk,Other,Any Other Ethnic Background,5088
+E23000024,Norfolk,Other,Arab,1410
+E23000024,Norfolk,White,Gypsy or Irish Traveller,1254
+E23000024,Norfolk,White,Roma,763
+E23000024,Norfolk,White,White British,814732
+E23000024,Norfolk,White,White Irish,4069
+E23000024,Norfolk,White,White Other,46381
+E23000025,Suffolk,Asian,Asian Other,5839
+E23000025,Suffolk,Asian,Bangladeshi,2735
+E23000025,Suffolk,Asian,Chinese,2450
+E23000025,Suffolk,Asian,Indian,5293
+E23000025,Suffolk,Asian,Pakistani,1206
+E23000025,Suffolk,Black,Black African,5079
+E23000025,Suffolk,Black,Black Caribbean,2769
+E23000025,Suffolk,Black,Black Other,2342
+E23000025,Suffolk,Mixed,Mixed Other,5192
+E23000025,Suffolk,Mixed,Mixed White and Asian,3804
+E23000025,Suffolk,Mixed,Mixed White and Black African,2977
+E23000025,Suffolk,Mixed,Mixed White and Black Caribbean,5815
+E23000025,Suffolk,Other,Any Other Ethnic Background,6187
+E23000025,Suffolk,Other,Arab,785
+E23000025,Suffolk,White,Gypsy or Irish Traveller,899
+E23000025,Suffolk,White,Roma,987
+E23000025,Suffolk,White,White British,664206
+E23000025,Suffolk,White,White Irish,3999
+E23000025,Suffolk,White,White Other,38195
+E23000026,Bedfordshire,Asian,Asian Other,13596
+E23000026,Bedfordshire,Asian,Bangladeshi,25678
+E23000026,Bedfordshire,Asian,Chinese,3015
+E23000026,Bedfordshire,Asian,Indian,26864
+E23000026,Bedfordshire,Asian,Pakistani,47770
+E23000026,Bedfordshire,Black,Black African,21165
+E23000026,Bedfordshire,Black,Black Caribbean,13572
+E23000026,Bedfordshire,Black,Black Other,4848
+E23000026,Bedfordshire,Mixed,Mixed Other,6431
+E23000026,Bedfordshire,Mixed,Mixed White and Asian,7157
+E23000026,Bedfordshire,Mixed,Mixed White and Black African,3294
+E23000026,Bedfordshire,Mixed,Mixed White and Black Caribbean,10255
+E23000026,Bedfordshire,Other,Any Other Ethnic Background,10449
+E23000026,Bedfordshire,Other,Arab,3156
+E23000026,Bedfordshire,White,Gypsy or Irish Traveller,870
+E23000026,Bedfordshire,White,Roma,1570
+E23000026,Bedfordshire,White,White British,436061
+E23000026,Bedfordshire,White,White Irish,9930
+E23000026,Bedfordshire,White,White Other,59045
+E23000027,Hertfordshire,Asian,Asian Other,21195
+E23000027,Hertfordshire,Asian,Bangladeshi,7332
+E23000027,Hertfordshire,Asian,Chinese,8944
+E23000027,Hertfordshire,Asian,Indian,48431
+E23000027,Hertfordshire,Asian,Pakistani,17745
+E23000027,Hertfordshire,Black,Black African,28552
+E23000027,Hertfordshire,Black,Black Caribbean,10940
+E23000027,Hertfordshire,Black,Black Other,5396
+E23000027,Hertfordshire,Mixed,Mixed Other,12787
+E23000027,Hertfordshire,Mixed,Mixed White and Asian,13997
+E23000027,Hertfordshire,Mixed,Mixed White and Black African,5722
+E23000027,Hertfordshire,Mixed,Mixed White and Black Caribbean,12622
+E23000027,Hertfordshire,Other,Any Other Ethnic Background,20803
+E23000027,Hertfordshire,Other,Arab,4218
+E23000027,Hertfordshire,White,Gypsy or Irish Traveller,1352
+E23000027,Hertfordshire,White,Roma,1995
+E23000027,Hertfordshire,White,White British,861018
+E23000027,Hertfordshire,White,White Irish,18727
+E23000027,Hertfordshire,White,White Other,96976
+E23000028,Essex,Asian,Asian Other,18772
+E23000028,Essex,Asian,Bangladeshi,9140
+E23000028,Essex,Asian,Chinese,9766
+E23000028,Essex,Asian,Indian,29842
+E23000028,Essex,Asian,Pakistani,10804
+E23000028,Essex,Black,Black African,45114
+E23000028,Essex,Black,Black Caribbean,10151
+E23000028,Essex,Black,Black Other,8201
+E23000028,Essex,Mixed,Mixed Other,12417
+E23000028,Essex,Mixed,Mixed White and Asian,13064
+E23000028,Essex,Mixed,Mixed White and Black African,7780
+E23000028,Essex,Mixed,Mixed White and Black Caribbean,14344
+E23000028,Essex,Other,Any Other Ethnic Background,15977
+E23000028,Essex,Other,Arab,3270
+E23000028,Essex,White,Gypsy or Irish Traveller,2308
+E23000028,Essex,White,Roma,1945
+E23000028,Essex,White,White British,1543595
+E23000028,Essex,White,White Irish,14472
+E23000028,Essex,White,White Other,89353
+E23000029,Thames Valley,Asian,Asian Other,53483
+E23000029,Thames Valley,Asian,Bangladeshi,11348
+E23000029,Thames Valley,Asian,Chinese,22791
+E23000029,Thames Valley,Asian,Indian,122133
+E23000029,Thames Valley,Asian,Pakistani,103356
+E23000029,Thames Valley,Black,Black African,60897
+E23000029,Thames Valley,Black,Black Caribbean,20697
+E23000029,Thames Valley,Black,Black Other,11583
+E23000029,Thames Valley,Mixed,Mixed Other,23324
+E23000029,Thames Valley,Mixed,Mixed White and Asian,28826
+E23000029,Thames Valley,Mixed,Mixed White and Black African,11777
+E23000029,Thames Valley,Mixed,Mixed White and Black Caribbean,23715
+E23000029,Thames Valley,Other,Any Other Ethnic Background,37874
+E23000029,Thames Valley,Other,Arab,10890
+E23000029,Thames Valley,White,Gypsy or Irish Traveller,2745
+E23000029,Thames Valley,White,Roma,3997
+E23000029,Thames Valley,White,White British,1738738
+E23000029,Thames Valley,White,White Irish,24922
+E23000029,Thames Valley,White,White Other,202011
+E23000030,Hampshire,Asian,Asian Other,34459
+E23000030,Hampshire,Asian,Bangladeshi,9600
+E23000030,Hampshire,Asian,Chinese,13048
+E23000030,Hampshire,Asian,Indian,29451
+E23000030,Hampshire,Asian,Pakistani,8506
+E23000030,Hampshire,Black,Black African,20330
+E23000030,Hampshire,Black,Black Caribbean,5371
+E23000030,Hampshire,Black,Black Other,3660
+E23000030,Hampshire,Mixed,Mixed Other,10970
+E23000030,Hampshire,Mixed,Mixed White and Asian,14049
+E23000030,Hampshire,Mixed,Mixed White and Black African,6972
+E23000030,Hampshire,Mixed,Mixed White and Black Caribbean,9707
+E23000030,Hampshire,Other,Any Other Ethnic Background,17041
+E23000030,Hampshire,Other,Arab,4063
+E23000030,Hampshire,White,Gypsy or Irish Traveller,2886
+E23000030,Hampshire,White,Roma,2011
+E23000030,Hampshire,White,White British,1694553
+E23000030,Hampshire,White,White Irish,11256
+E23000030,Hampshire,White,White Other,100325
+E23000031,Surrey,Asian,Asian Other,23697
+E23000031,Surrey,Asian,Bangladeshi,5215
+E23000031,Surrey,Asian,Chinese,11055
+E23000031,Surrey,Asian,Indian,35079
+E23000031,Surrey,Asian,Pakistani,17882
+E23000031,Surrey,Black,Black African,13574
+E23000031,Surrey,Black,Black Caribbean,4751
+E23000031,Surrey,Black,Black Other,2509
+E23000031,Surrey,Mixed,Mixed Other,11995
+E23000031,Surrey,Mixed,Mixed White and Asian,15908
+E23000031,Surrey,Mixed,Mixed White and Black African,4982
+E23000031,Surrey,Mixed,Mixed White and Black Caribbean,7584
+E23000031,Surrey,Other,Any Other Ethnic Background,14981
+E23000031,Surrey,Other,Arab,5258
+E23000031,Surrey,White,Gypsy or Irish Traveller,2594
+E23000031,Surrey,White,Roma,1679
+E23000031,Surrey,White,White British,921286
+E23000031,Surrey,White,White Irish,14107
+E23000031,Surrey,White,White Other,88953
+E23000032,Kent,Asian,Asian Other,29249
+E23000032,Kent,Asian,Bangladeshi,7281
+E23000032,Kent,Asian,Chinese,8922
+E23000032,Kent,Asian,Indian,34142
+E23000032,Kent,Asian,Pakistani,6828
+E23000032,Kent,Black,Black African,41652
+E23000032,Kent,Black,Black Caribbean,8526
+E23000032,Kent,Black,Black Other,6578
+E23000032,Kent,Mixed,Mixed Other,11876
+E23000032,Kent,Mixed,Mixed White and Asian,14100
+E23000032,Kent,Mixed,Mixed White and Black African,7057
+E23000032,Kent,Mixed,Mixed White and Black Caribbean,11554
+E23000032,Kent,Other,Any Other Ethnic Background,20082
+E23000032,Kent,Other,Arab,3243
+E23000032,Kent,White,Gypsy or Irish Traveller,6226
+E23000032,Kent,White,Roma,2711
+E23000032,Kent,White,White British,1530035
+E23000032,Kent,White,White Irish,12729
+E23000032,Kent,White,White Other,93065
+E23000033,Sussex,Asian,Asian Other,18651
+E23000033,Sussex,Asian,Bangladeshi,6459
+E23000033,Sussex,Asian,Chinese,8501
+E23000033,Sussex,Asian,Indian,20733
+E23000033,Sussex,Asian,Pakistani,8767
+E23000033,Sussex,Black,Black African,14051
+E23000033,Sussex,Black,Black Caribbean,4135
+E23000033,Sussex,Black,Black Other,3207
+E23000033,Sussex,Mixed,Mixed Other,13824
+E23000033,Sussex,Mixed,Mixed White and Asian,15224
+E23000033,Sussex,Mixed,Mixed White and Black African,7833
+E23000033,Sussex,Mixed,Mixed White and Black Caribbean,9439
+E23000033,Sussex,Other,Any Other Ethnic Background,16132
+E23000033,Sussex,Other,Arab,6070
+E23000033,Sussex,White,Gypsy or Irish Traveller,2271
+E23000033,Sussex,White,Roma,2414
+E23000033,Sussex,White,White British,1430421
+E23000033,Sussex,White,White Irish,15142
+E23000033,Sussex,White,White Other,102282
+E23000035,Devon & Cornwall,Asian,Asian Other,9045
+E23000035,Devon & Cornwall,Asian,Bangladeshi,1966
+E23000035,Devon & Cornwall,Asian,Chinese,6203
+E23000035,Devon & Cornwall,Asian,Indian,5566
+E23000035,Devon & Cornwall,Asian,Pakistani,1288
+E23000035,Devon & Cornwall,Black,Black African,4486
+E23000035,Devon & Cornwall,Black,Black Caribbean,1401
+E23000035,Devon & Cornwall,Black,Black Other,849
+E23000035,Devon & Cornwall,Mixed,Mixed Other,7160
+E23000035,Devon & Cornwall,Mixed,Mixed White and Asian,8588
+E23000035,Devon & Cornwall,Mixed,Mixed White and Black African,3448
+E23000035,Devon & Cornwall,Mixed,Mixed White and Black Caribbean,5533
+E23000035,Devon & Cornwall,Other,Any Other Ethnic Background,10779
+E23000035,Devon & Cornwall,Other,Arab,2397
+E23000035,Devon & Cornwall,White,Gypsy or Irish Traveller,1662
+E23000035,Devon & Cornwall,White,Roma,1015
+E23000035,Devon & Cornwall,White,White British,1652799
+E23000035,Devon & Cornwall,White,White Irish,8140
+E23000035,Devon & Cornwall,White,White Other,55614
+E23000036,Avon and Somerset,Asian,Asian Other,13901
+E23000036,Avon and Somerset,Asian,Bangladeshi,4695
+E23000036,Avon and Somerset,Asian,Chinese,12054
+E23000036,Avon and Somerset,Asian,Indian,19006
+E23000036,Avon and Somerset,Asian,Pakistani,11172
+E23000036,Avon and Somerset,Black,Black African,24272
+E23000036,Avon and Somerset,Black,Black Caribbean,9325
+E23000036,Avon and Somerset,Black,Black Other,4206
+E23000036,Avon and Somerset,Mixed,Mixed Other,11108
+E23000036,Avon and Somerset,Mixed,Mixed White and Asian,13005
+E23000036,Avon and Somerset,Mixed,Mixed White and Black African,5846
+E23000036,Avon and Somerset,Mixed,Mixed White and Black Caribbean,14517
+E23000036,Avon and Somerset,Other,Any Other Ethnic Background,12515
+E23000036,Avon and Somerset,Other,Arab,4457
+E23000036,Avon and Somerset,White,Gypsy or Irish Traveller,1795
+E23000036,Avon and Somerset,White,Roma,2234
+E23000036,Avon and Somerset,White,White British,1470837
+E23000036,Avon and Somerset,White,White Irish,10868
+E23000036,Avon and Somerset,White,White Other,98825
+E23000037,Gloucestershire,Asian,Asian Other,4724
+E23000037,Gloucestershire,Asian,Bangladeshi,1566
+E23000037,Gloucestershire,Asian,Chinese,2218
+E23000037,Gloucestershire,Asian,Indian,8244
+E23000037,Gloucestershire,Asian,Pakistani,1715
+E23000037,Gloucestershire,Black,Black African,3942
+E23000037,Gloucestershire,Black,Black Caribbean,2629
+E23000037,Gloucestershire,Black,Black Other,1210
+E23000037,Gloucestershire,Mixed,Mixed Other,3266
+E23000037,Gloucestershire,Mixed,Mixed White and Asian,4121
+E23000037,Gloucestershire,Mixed,Mixed White and Black African,1728
+E23000037,Gloucestershire,Mixed,Mixed White and Black Caribbean,5042
+E23000037,Gloucestershire,Other,Any Other Ethnic Background,3515
+E23000037,Gloucestershire,Other,Arab,869
+E23000037,Gloucestershire,White,Gypsy or Irish Traveller,974
+E23000037,Gloucestershire,White,Roma,715
+E23000037,Gloucestershire,White,White British,565793
+E23000037,Gloucestershire,White,White Irish,4024
+E23000037,Gloucestershire,White,White Other,28774
+E23000038,Wiltshire,Asian,Asian Other,10177
+E23000038,Wiltshire,Asian,Bangladeshi,2336
+E23000038,Wiltshire,Asian,Chinese,2655
+E23000038,Wiltshire,Asian,Indian,20439
+E23000038,Wiltshire,Asian,Pakistani,2415
+E23000038,Wiltshire,Black,Black African,7149
+E23000038,Wiltshire,Black,Black Caribbean,2634
+E23000038,Wiltshire,Black,Black Other,2132
+E23000038,Wiltshire,Mixed,Mixed Other,4151
+E23000038,Wiltshire,Mixed,Mixed White and Asian,4403
+E23000038,Wiltshire,Mixed,Mixed White and Black African,2213
+E23000038,Wiltshire,Mixed,Mixed White and Black Caribbean,4451
+E23000038,Wiltshire,Other,Any Other Ethnic Background,6046
+E23000038,Wiltshire,Other,Arab,988
+E23000038,Wiltshire,White,Gypsy or Irish Traveller,858
+E23000038,Wiltshire,White,Roma,800
+E23000038,Wiltshire,White,White British,632823
+E23000038,Wiltshire,White,White Irish,4157
+E23000038,Wiltshire,White,White Other,32910
+E23000039,Dorset,Asian,Asian Other,6381
+E23000039,Dorset,Asian,Bangladeshi,1668
+E23000039,Dorset,Asian,Chinese,3355
+E23000039,Dorset,Asian,Indian,5604
+E23000039,Dorset,Asian,Pakistani,845
+E23000039,Dorset,Black,Black African,3441
+E23000039,Dorset,Black,Black Caribbean,1199
+E23000039,Dorset,Black,Black Other,657
+E23000039,Dorset,Mixed,Mixed Other,4569
+E23000039,Dorset,Mixed,Mixed White and Asian,4859
+E23000039,Dorset,Mixed,Mixed White and Black African,2439
+E23000039,Dorset,Mixed,Mixed White and Black Caribbean,3686
+E23000039,Dorset,Other,Any Other Ethnic Background,5540
+E23000039,Dorset,Other,Arab,1579
+E23000039,Dorset,White,Gypsy or Irish Traveller,1059
+E23000039,Dorset,White,Roma,1030
+E23000039,Dorset,White,White British,685868
+E23000039,Dorset,White,White Irish,4497
+E23000039,Dorset,White,White Other,41419
+W15000001,North Wales,Asian,Asian Other,3140
+W15000001,North Wales,Asian,Bangladeshi,910
+W15000001,North Wales,Asian,Chinese,2122
+W15000001,North Wales,Asian,Indian,2213
+W15000001,North Wales,Asian,Pakistani,1014
+W15000001,North Wales,Black,Black African,1612
+W15000001,North Wales,Black,Black Caribbean,349
+W15000001,North Wales,Black,Black Other,356
+W15000001,North Wales,Mixed,Mixed Other,1744
+W15000001,North Wales,Mixed,Mixed White and Asian,2385
+W15000001,North Wales,Mixed,Mixed White and Black African,1245
+W15000001,North Wales,Mixed,Mixed White and Black Caribbean,1905
+W15000001,North Wales,Other,Any Other Ethnic Background,1879
+W15000001,North Wales,Other,Arab,911
+W15000001,North Wales,White,Gypsy or Irish Traveller,580
+W15000001,North Wales,White,Roma,274
+W15000001,North Wales,White,White British,641179
+W15000001,North Wales,White,White Irish,3327
+W15000001,North Wales,White,White Other,19843
+W15000002,Gwent,Asian,Asian Other,3451
+W15000002,Gwent,Asian,Bangladeshi,3068
+W15000002,Gwent,Asian,Chinese,1816
+W15000002,Gwent,Asian,Indian,3246
+W15000002,Gwent,Asian,Pakistani,5230
+W15000002,Gwent,Black,Black African,3143
+W15000002,Gwent,Black,Black Caribbean,800
+W15000002,Gwent,Black,Black Other,647
+W15000002,Gwent,Mixed,Mixed Other,2222
+W15000002,Gwent,Mixed,Mixed White and Asian,2487
+W15000002,Gwent,Mixed,Mixed White and Black African,1265
+W15000002,Gwent,Mixed,Mixed White and Black Caribbean,2897
+W15000002,Gwent,Other,Any Other Ethnic Background,2556
+W15000002,Gwent,Other,Arab,1256
+W15000002,Gwent,White,Gypsy or Irish Traveller,646
+W15000002,Gwent,White,Roma,508
+W15000002,Gwent,White,White British,537042
+W15000002,Gwent,White,White Irish,1913
+W15000002,Gwent,White,White Other,13465
+W15000003,South Wales,Asian,Asian Other,11625
+W15000003,South Wales,Asian,Bangladeshi,10895
+W15000003,South Wales,Asian,Chinese,9474
+W15000003,South Wales,Asian,Indian,14250
+W15000003,South Wales,Asian,Pakistani,10794
+W15000003,South Wales,Black,Black African,14467
+W15000003,South Wales,Black,Black Caribbean,2182
+W15000003,South Wales,Black,Black Other,2731
+W15000003,South Wales,Mixed,Mixed Other,7472
+W15000003,South Wales,Mixed,Mixed White and Asian,7468
+W15000003,South Wales,Mixed,Mixed White and Black African,4862
+W15000003,South Wales,Mixed,Mixed White and Black Caribbean,7733
+W15000003,South Wales,Other,Any Other Ethnic Background,9064
+W15000003,South Wales,Other,Arab,8855
+W15000003,South Wales,White,Gypsy or Irish Traveller,1161
+W15000003,South Wales,White,Roma,885
+W15000003,South Wales,White,White British,1150530
+W15000003,South Wales,White,White Irish,5645
+W15000003,South Wales,White,White Other,36963
+W15000004,Dyfed-Powys,Asian,Asian Other,2482
+W15000004,Dyfed-Powys,Asian,Bangladeshi,442
+W15000004,Dyfed-Powys,Asian,Chinese,1084
+W15000004,Dyfed-Powys,Asian,Indian,1310
+W15000004,Dyfed-Powys,Asian,Pakistani,517
+W15000004,Dyfed-Powys,Black,Black African,728
+W15000004,Dyfed-Powys,Black,Black Caribbean,362
+W15000004,Dyfed-Powys,Black,Black Other,201
+W15000004,Dyfed-Powys,Mixed,Mixed Other,1322
+W15000004,Dyfed-Powys,Mixed,Mixed White and Asian,1705
+W15000004,Dyfed-Powys,Mixed,Mixed White and Black African,699
+W15000004,Dyfed-Powys,Mixed,Mixed White and Black Caribbean,1217
+W15000004,Dyfed-Powys,Other,Any Other Ethnic Background,1310
+W15000004,Dyfed-Powys,Other,Arab,596
+W15000004,Dyfed-Powys,White,Gypsy or Irish Traveller,1167
+W15000004,Dyfed-Powys,White,Roma,186
+W15000004,Dyfed-Powys,White,White British,485512
+W15000004,Dyfed-Powys,White,White Irish,2379
+W15000004,Dyfed-Powys,White,White Other,12741
