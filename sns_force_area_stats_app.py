@@ -56,9 +56,12 @@ def filter_data_by_ethnicity(data, ethnicity_selection):
     else:
         return data[data['ethnicity_full'] == ethnicity_selection]
 
-# Function to calculate rates by police force area
-def calculate_pfa_ethnicity_rates(sns_df, census_df, start_date=None, end_date=None, ethnicity_selection="All"):
-    """Calculate stop and search rates per 100,000 people by police force area and ethnicity"""
+# Function to calculate rates by police force area with exclusion capability
+def calculate_pfa_ethnicity_rates(sns_df, census_df, start_date=None, end_date=None, ethnicity_selection="All", exclude_ethnicity=None):
+    """
+    Calculate stop and search rates per 100,000 people by police force area and ethnicity
+    Can exclude another ethnicity category to create meaningful non-overlapping comparisons
+    """
     
     # Filter by date range
     filtered_sns = sns_df.copy()
@@ -70,6 +73,17 @@ def calculate_pfa_ethnicity_rates(sns_df, census_df, start_date=None, end_date=N
     # Filter by ethnicity
     sns_filtered = filter_data_by_ethnicity(filtered_sns, ethnicity_selection)
     census_filtered = filter_data_by_ethnicity(census_df, ethnicity_selection)
+    
+    # Apply exclusion if specified (to avoid overlapping categories)
+    if exclude_ethnicity and exclude_ethnicity != "All":
+        if exclude_ethnicity in ["Asian", "Black", "Mixed", "White", "Other"]:
+            # Exclude from simple ethnicity
+            sns_filtered = sns_filtered[sns_filtered['ethnicity_simple'] != exclude_ethnicity]
+            census_filtered = census_filtered[census_filtered['ethnicity_simple'] != exclude_ethnicity]
+        else:
+            # Exclude from detailed ethnicity
+            sns_filtered = sns_filtered[sns_filtered['ethnicity_full'] != exclude_ethnicity]
+            census_filtered = census_filtered[census_filtered['ethnicity_full'] != exclude_ethnicity]
     
     # Aggregate data by police force
     sns_counts = sns_filtered.groupby(['police_force_code', 'police_force_name'])['sns_count'].sum().reset_index()
@@ -87,6 +101,31 @@ def calculate_pfa_ethnicity_rates(sns_df, census_df, start_date=None, end_date=N
     
     return result_df
 
+# Function to determine overlap relationship between ethnicities
+def get_overlap_relationship(ethnicity1, ethnicity2, census_df):
+    """Determine if ethnicities overlap and which should be excluded from which"""
+    if ethnicity1 == ethnicity2:
+        return "identical"
+    
+    # Handle "All" category overlaps
+    if ethnicity1 == "All" and ethnicity2 != "All":
+        return "exclude_from_all"  # exclude ethnicity2 from ethnicity1
+    elif ethnicity2 == "All" and ethnicity1 != "All":
+        return "exclude_from_all"  # exclude ethnicity1 from ethnicity2
+    
+    simple_ethnicities = ["Asian", "Black", "Mixed", "White", "Other"]
+    
+    # Get mapping of simple to detailed ethnicities
+    simple_detailed_map = census_df.groupby('ethnicity_simple')['ethnicity_full'].unique()
+    
+    # Check if one is simple and other is its detailed subset
+    if ethnicity1 in simple_ethnicities and ethnicity2 in simple_detailed_map.get(ethnicity1, []):
+        return "exclude_detailed_from_simple"  # exclude ethnicity2 from ethnicity1
+    elif ethnicity2 in simple_ethnicities and ethnicity1 in simple_detailed_map.get(ethnicity2, []):
+        return "exclude_detailed_from_simple"  # exclude ethnicity1 from ethnicity2
+    
+    return "no_overlap"
+
 # Function to add labels to bars
 def add_bar_labels(ax, bars, values):
     """Add value labels on top of bars"""
@@ -97,8 +136,11 @@ def add_bar_labels(ax, bars, values):
                ha='center', va='bottom' if height >= 0 else 'top', fontsize=8)
 
 # Function to create comparison plot (two ethnicities)
-def create_comparison_plot(ax, primary_stats, comp_stats, primary_ethnicity, comparator_ethnicity):
+def create_comparison_plot(ax, primary_stats, comp_stats, primary_ethnicity, comparator_ethnicity, census_df):
     """Create plot comparing rates between two ethnicities"""
+    
+    # Check relationship between categories
+    relationship = get_overlap_relationship(primary_ethnicity, comparator_ethnicity, census_df)
     
     # Merge data and calculate differences
     merged_stats = primary_stats[['police_force_name', 'rate_per_100k']].merge(
@@ -116,6 +158,13 @@ def create_comparison_plot(ax, primary_stats, comp_stats, primary_ethnicity, com
     # Add horizontal line at zero and labels
     ax.axhline(y=0, color='black', linestyle='-', alpha=0.3)
     add_bar_labels(ax, bars, merged_stats['delta_rate'])
+    
+    # Add warning message for identical categories
+    if relationship == "identical":
+        ax.text(0.5, 0.95, f'ℹ️ Note: Comparing identical categories\nShowing raw rates for {primary_ethnicity}', 
+               transform=ax.transAxes, ha='center', va='top', 
+               bbox=dict(boxstyle='round,pad=0.5', facecolor='lightblue', alpha=0.8),
+               fontsize=10, fontweight='bold')
     
     # Set up axis labels and formatting
     ax.set_xticks(range(len(merged_stats)))
@@ -204,64 +253,126 @@ def main():
         value=pd.to_datetime('2023-03-31').date()
     )
     
-    # Generate plot when button is clicked or automatically
-    if st.sidebar.button("Update Plot") or True:  # Auto-update
+    # Show overlap relationship info
+    if comparator_ethnicity != 'None':
+        relationship = get_overlap_relationship(primary_ethnicity, comparator_ethnicity, census_df)
+        if relationship == "identical":
+            st.sidebar.warning("⚠️ You've selected identical categories for comparison")
+        elif relationship == "exclude_from_all":
+            st.sidebar.info("ℹ️ Overlapping categories detected - exclusions will be applied automatically")
+        elif relationship == "exclude_detailed_from_simple":
+            st.sidebar.info("ℹ️ Overlapping categories detected - exclusions will be applied automatically")
+    
+    # Generate plot
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
         
-        with warnings.catch_warnings():
-            warnings.simplefilter("ignore")
+        try:
+            # Calculate rates for primary ethnicity
+            primary_stats = calculate_pfa_ethnicity_rates(
+                sns_df, census_df, start_date, end_date, primary_ethnicity
+            )
             
-            try:
-                # Calculate rates for primary ethnicity
-                primary_stats = calculate_pfa_ethnicity_rates(
-                    sns_df, census_df, start_date, end_date, primary_ethnicity
-                )
+            # Create matplotlib figure
+            fig, ax = plt.subplots(figsize=(16, 10))
+            
+            # Create appropriate plot type
+            if comparator_ethnicity != 'None':
+                # Determine overlap relationship and apply appropriate exclusions
+                relationship = get_overlap_relationship(primary_ethnicity, comparator_ethnicity, census_df)
                 
-                # Create matplotlib figure
-                fig, ax = plt.subplots(figsize=(16, 10))
-                
-                # Create appropriate plot type
-                if comparator_ethnicity != 'None':
-                    comp_stats = calculate_pfa_ethnicity_rates(
-                        sns_df, census_df, start_date, end_date, comparator_ethnicity
-                    )
-                    title_text = create_comparison_plot(ax, primary_stats, comp_stats, primary_ethnicity, comparator_ethnicity)
-                else:
-                    title_text = create_single_plot(ax, primary_stats, primary_ethnicity)
-                
-                # Apply styling and finalize plot
-                style_plot(ax)
-                title_text += f"\n{pd.to_datetime(start_date).strftime('%b %Y')} to {pd.to_datetime(end_date).strftime('%b %Y')}"
-                ax.set_title(title_text, fontsize=14, pad=20)
-                
-                plt.rcParams.update({'font.size': 10})
-                plt.tight_layout()
-                
-                # Display plot in Streamlit
-                st.pyplot(fig)
-                
-                # Display summary statistics
-                st.subheader("Summary Statistics")
-                col1, col2 = st.columns(2)
-                
-                with col1:
-                    st.write(f"**{primary_ethnicity} Statistics:**")
-                    st.write(f"- Highest rate: {primary_stats['rate_per_100k'].max():.1f} per 100k")
-                    st.write(f"- Lowest rate: {primary_stats['rate_per_100k'].min():.1f} per 100k")
-                    st.write(f"- Average rate: {primary_stats['rate_per_100k'].mean():.1f} per 100k")
-                
-                if comparator_ethnicity != 'None':
-                    with col2:
+                if relationship == "exclude_detailed_from_simple":
+                    # Determine which is simple and which is detailed, then exclude detailed from simple
+                    simple_ethnicities = ["Asian", "Black", "Mixed", "White", "Other"]
+                    
+                    if primary_ethnicity in simple_ethnicities:
+                        # Primary is simple, exclude comparator from primary
+                        primary_stats = calculate_pfa_ethnicity_rates(
+                            sns_df, census_df, start_date, end_date, primary_ethnicity, exclude_ethnicity=comparator_ethnicity
+                        )
                         comp_stats = calculate_pfa_ethnicity_rates(
                             sns_df, census_df, start_date, end_date, comparator_ethnicity
                         )
-                        st.write(f"**{comparator_ethnicity} Statistics:**")
-                        st.write(f"- Highest rate: {comp_stats['rate_per_100k'].max():.1f} per 100k")
-                        st.write(f"- Lowest rate: {comp_stats['rate_per_100k'].min():.1f} per 100k")
-                        st.write(f"- Average rate: {comp_stats['rate_per_100k'].mean():.1f} per 100k")
+                    else:
+                        # Comparator is simple, exclude primary from comparator
+                        comp_stats = calculate_pfa_ethnicity_rates(
+                            sns_df, census_df, start_date, end_date, comparator_ethnicity, exclude_ethnicity=primary_ethnicity
+                        )
+                        
+                elif relationship == "exclude_from_all":
+                    # One category is "All", exclude the other from it
+                    if primary_ethnicity == "All":
+                        # Primary is "All", exclude comparator from primary
+                        primary_stats = calculate_pfa_ethnicity_rates(
+                            sns_df, census_df, start_date, end_date, primary_ethnicity, exclude_ethnicity=comparator_ethnicity
+                        )
+                        comp_stats = calculate_pfa_ethnicity_rates(
+                            sns_df, census_df, start_date, end_date, comparator_ethnicity
+                        )
+                    else:
+                        # Comparator is "All", exclude primary from comparator
+                        comp_stats = calculate_pfa_ethnicity_rates(
+                            sns_df, census_df, start_date, end_date, comparator_ethnicity, exclude_ethnicity=primary_ethnicity
+                        )
+                else:
+                    # No overlap or identical - no exclusions needed
+                    comp_stats = calculate_pfa_ethnicity_rates(
+                        sns_df, census_df, start_date, end_date, comparator_ethnicity
+                    )
                 
-            except Exception as e:
-                st.error(f"Error creating plot: {e}")
-                st.error("Please check that your data contains the required columns and date ranges.")
+                title_text = create_comparison_plot(ax, primary_stats, comp_stats, primary_ethnicity, comparator_ethnicity, census_df)
+            else:
+                title_text = create_single_plot(ax, primary_stats, primary_ethnicity)
+            
+            # Apply styling and finalize plot
+            style_plot(ax)
+            title_text += f"\n{pd.to_datetime(start_date).strftime('%b %Y')} to {pd.to_datetime(end_date).strftime('%b %Y')}"
+            ax.set_title(title_text, fontsize=14, pad=20)
+            
+            plt.rcParams.update({'font.size': 10})
+            plt.tight_layout()
+            
+            # Display plot in Streamlit
+            st.pyplot(fig)
+            
+            # Display summary statistics
+            st.subheader("Summary Statistics")
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.write(f"**{primary_ethnicity} Statistics:**")
+                st.write(f"- Highest rate: {primary_stats['rate_per_100k'].max():.1f} per 100k")
+                st.write(f"- Lowest rate: {primary_stats['rate_per_100k'].min():.1f} per 100k")
+                st.write(f"- Average rate: {primary_stats['rate_per_100k'].mean():.1f} per 100k")
+                st.write(f"- Total searches: {primary_stats['sns_count'].sum():,}")
+                st.write(f"- Total population: {primary_stats['census_pop'].sum():,}")
+            
+            if comparator_ethnicity != 'None':
+                with col2:
+                    st.write(f"**{comparator_ethnicity} Statistics:**")
+                    st.write(f"- Highest rate: {comp_stats['rate_per_100k'].max():.1f} per 100k")
+                    st.write(f"- Lowest rate: {comp_stats['rate_per_100k'].min():.1f} per 100k")
+                    st.write(f"- Average rate: {comp_stats['rate_per_100k'].mean():.1f} per 100k")
+                    st.write(f"- Total searches: {comp_stats['sns_count'].sum():,}")
+                    st.write(f"- Total population: {comp_stats['census_pop'].sum():,}")
+            
+            # Show relationship info
+            if comparator_ethnicity != 'None':
+                st.subheader("Category Relationship")
+                relationship = get_overlap_relationship(primary_ethnicity, comparator_ethnicity, census_df)
+                
+                if relationship == "identical":
+                    st.info("ℹ️ **Identical categories:** You're comparing the same ethnicity group")
+                elif relationship == "exclude_from_all":
+                    st.info("ℹ️ **Overlapping categories:** One category contains the other - exclusions applied automatically")
+                elif relationship == "exclude_detailed_from_simple":
+                    st.info("ℹ️ **Overlapping categories:** Detailed ethnicity is subset of simple ethnicity - exclusions applied automatically")
+                else:
+                    st.success("✅ **Non-overlapping categories:** Clean comparison between distinct groups")
+            
+        except Exception as e:
+            st.error(f"Error creating plot: {e}")
+            st.error("Please check that your data contains the required columns and date ranges.")
 
 if __name__ == "__main__":
     main()
